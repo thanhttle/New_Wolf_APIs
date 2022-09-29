@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework.authtoken',
     'Fee_Calculation_APIs',
+    'one_off_fee_api',
 ]
 
 MIDDLEWARE = [

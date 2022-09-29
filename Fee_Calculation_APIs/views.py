@@ -4,14 +4,20 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from .models import Fee
+from .models import OneOffFee
 from .serializers import FeeSerializer
+from .serializers import OneOffFeeSerializer
 from Fee_Calculation_APIs import serializers
-
 
 
 class FeeView(viewsets.ModelViewSet):
 	queryset = Fee.objects.all()
 	serializer_class = FeeSerializer
+
+
+class OneOffFeeView(viewsets.ModelViewSet):
+	queryset = OneOffFee.objects.all()
+	serializer_class = OneOffFeeSerializer
 
 
 class HelloApiView(APIView):

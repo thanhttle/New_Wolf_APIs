@@ -4,8 +4,9 @@ from rest_framework import routers
 
 router = routers.DefaultRouter()
 router.register('Fee', views.FeeView)
+router.register('OneOffFee', views.OneOffFeeView)
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('hello-view/', views.HelloApiView.as_view()),
+    path('One-Off-Fee/', views.HelloApiView.as_view()),
 ]

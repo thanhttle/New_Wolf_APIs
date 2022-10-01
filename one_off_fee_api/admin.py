@@ -1,3 +1,4 @@
 from django.contrib import admin
+from .models import One_Off_Fee
 
-# Register your models here.
+admin.site.register(One_Off_Fee)

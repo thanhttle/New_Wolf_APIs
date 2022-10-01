@@ -8,8 +8,8 @@ PROJECT_GIT_URL='https://github.com/thanhttle/New_Wolf_APIs.git'
 PROJECT_BASE_PATH='/usr/local/apps/wolf_djangoapi'
 
 echo "Installing dependencies..."
-apt-get update
-apt-get install -y python3-dev python3-venv sqlite python-pip supervisor nginx git
+yum update
+yum install -y python3-dev python3-venv sqlite python-pip supervisor nginx git
 
 # Create project directory
 mkdir -p $PROJECT_BASE_PATH
